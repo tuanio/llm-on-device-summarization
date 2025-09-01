@@ -168,3 +168,8 @@ bash run_eval.sh
 cd mlx_eval
 python stream_mlx.py --model tuanio/converted_llama32_3b_it_4bit_cnn_dailymail_10k_r4_a8_lr2e-4_1ep_fused_lora_dequant4bit_mlx4bit
 ```
+
+
+----
+
+![Demo GIF](demo.gif)
