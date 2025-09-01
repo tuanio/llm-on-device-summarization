@@ -1,3 +1,4 @@
+```
 1. Evaluate existings LLM
 - Gemma3 {270m, 1B, 4B}
 - LLama3.2 {1B, 3B}
@@ -5,8 +6,8 @@
 - SmolLM2 {135m, 360m, 1.7B}
 2. Train LoRA Adapter
 - Rank {8, 64} Alpha {0.5x rank, 1x rank, 2x rank}
-- 
-1. Evaluate again
+3. Evaluate again
+```
 
 # Things to consider
 - Evaluation metrics
@@ -16,24 +17,27 @@
 
 # ====
 ## Original
+```
 repo = "mlx-community/Llama-3.2-3B-Instruct"
 Total tokens: 79
 Total seconds: 4.91
 Time to first token: 1.58
 Token per seconds: 16.1
 Memory usage: 
-
+```
+```
 repo = "mlx_converted/Llama-3.2-3B-Instruct-4bit"
 Total tokens: 57
 Total seconds: 2.75
 Time to first token: 1.94
 Token per seconds: 20.73
 Memory usage:
-
+```
 # Finetuned
 
 # Eval MLX
 
+```
 max tokens 512:
 Model: mlx_converted/Llama-3.2-3B-Instruct-4bit
 Time to first token 2.860134929200285 1.317593149171987
@@ -42,7 +46,9 @@ ROUGE-1 0.35131861212575616 0.11253654477901467
 ROUGE-2 0.1255828731541817 0.06275988904483726
 ROUGE-L 0.22838049724247647 0.08222133597458982
 ROUGE-L-Sum 0.29095788045969645 0.09719436401520111
+```
 
+```
 max tokens 2048:
 Model: mlx_converted/Llama-3.2-3B-Instruct-4bit
 Time to first token 2.8713101334025852 1.3049507520114114
@@ -53,7 +59,9 @@ ROUGE-L 0.22838049724247647 0.08222133597458982
 ROUGE-L-Sum 0.29095788045969645 0.09719436401520111
 
 [2.67, 4.7, 4.79, 4.65, 4.57, 2.37, 4.83, 2.21, 2.27, 4.6] = 3.77 +- 1.14
+```
 
+```
 max tokens 2048:
 Model: ./mlx_converted/converted_llama32_322b_it_4bit_cnn_dailymail_10k_r4_a8_lr2e-4_1ep_fused_lora_dequant4bit_mlx4bit
 Time to first token 2.8403449875972 1.3372315202693374
@@ -64,9 +72,10 @@ ROUGE-L 0.2680353222429307 0.13296992215158374
 ROUGE-L-Sum 0.3580408821968879 0.12819321206153167
 
 [2.14, 4.72, 2.55, 4.83, 4.7, 4.77, 4.75, 4.68, 3.99] = 4.12 +- 0.98
+```
 
 ========
-
+```
 Model: mlx_converted/Qwen2.5-3B-Instruct-4bit
 Time to first token 2.83723483759677 1.3057735154010628
 Tokens/Seconds 24.094092600068667 5.583343805761348
@@ -76,12 +85,14 @@ ROUGE-L 0.22611534508825795 0.100793671410633
 ROUGE-L-Sum 0.28734145104227965 0.08962916061122156
 
 [2.8, 4.54, 4.4, 4.5, 4.4, 2.25, 2.18, 4.61, 2.08, 2.17] = 3.39 +- 1.11
+```
 
-
+```
 Time to first token 2.8285698668012627 1.336867697691089
 Tokens/Seconds 27.70763206840622 11.96573998564314
 ROUGE-1 0.33569309638871275 0.1315925120692853
 ROUGE-2 0.1284655345366571 0.07366678767167893
 ROUGE-L 0.2563975012894647 0.09965055881854454
 ROUGE-L-Sum 0.31838068168617273 0.12041120334018207
-[2.03, 2.10, 2.13, 4.47, 4.59, 3.78, 3.8, 4.61, 2.1, 2.13]
+[2.03, 2.10, 2.13, 4.47, 4.59, 3.78, 3.8, 4.61, 2.1, 2.13] = 3.17 +- 1.11
+```
