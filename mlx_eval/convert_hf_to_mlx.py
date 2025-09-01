@@ -32,48 +32,23 @@ def convert_hf_lora_to_mlx(hf_adapter_path, hf_config_path, mlx_output_path):
     np.savez(mlx_output_path, **mlx_lora_data)
     print(f"Converted LoRA adapters saved to {mlx_output_path}")
 
-# Usage example (replace with your actual paths)
-# hf_adapter_path = "path/to/your/hf_lora_adapter/adapter_model.safetensors"
-# hf_config_path = "path/to/your/hf_lora_adapter/adapter_config.json"
-# mlx_output_path = "path/to/save/mlx_lora_adapters.npz"
-# convert_hf_lora_to_mlx(hf_adapter_path, hf_config_path, mlx_output_path)
+# ------- LLama
 
 # repo = "mlx-community/Llama-3.2-3B-Instruct"
 # mlx_path = "mlx_converted/Llama-3.2-3B-Instruct-4bit"
-
-# repo = "./local_repo/llama32_3b_it_4bit_cnn_dailymail_10k_r4_a8_lr2e-4_1ep"
-# mlx_path = "./mlx_converted/llama32_3b_it_4bit_cnn_dailymail_10k_r4_a8_lr2e-4_1ep_4bit"
-
-# convert(repo, mlx_path=mlx_path, quantize=True)
-
-# repo = "./local_repo/llama32_3b_it_4bit_cnn_dailymail_10k_r4_a8_lr2e-4_1ep"
-# mlx_path = "./mlx_converted/llama32_3b_it_4bit_cnn_dailymail_10k_r4_a8_lr2e-4_1ep_4bit"
-
-# convert(repo, mlx_path=mlx_path, quantize=True)
-
-# repo = "./local_repo/llama32_3b_it_4bit_cnn_dailymail_10k_r4_a8_lr2e-4_1ep_fused_lora"
-# mlx_path = "./mlx_converted/converted_llama32_3b_it_4bit_cnn_dailymail_10k_r4_a8_lr2e-4_1ep_fused_lora"
-
 
 # repo = "./local_repo/llama32_3b_it_4bit_cnn_dailymail_10k_r4_a8_lr2e-4_1ep_fused_lora_dequant4bit"
 # mlx_path = "./mlx_converted/converted_llama32_3b_it_4bit_cnn_dailymail_10k_r4_a8_lr2e-4_1ep_fused_lora_dequant4bit_mlx4bit"
 
 # convert(repo, mlx_path=mlx_path, quantize=True)
 
+# ------ Qwen
+
 # repo = "mlx-community/Qwen2.5-3B-Instruct-bf16"
 # mlx_path = "mlx_converted/Qwen2.5-3B-Instruct-4bit"
 # convert(repo, mlx_path=mlx_path, quantize=True)
-
 
 repo = "./local_repo/qwen_qwen2_5_3b_4bit_cnn_dailymail_10k_r4_a8_lr2e-4_1ep_fused_lora_dequant4bit"
 mlx_path = "./mlx_converted/converted_qwen_qwen2_5_3b_4bit_cnn_dailymail_10k_r4_a8_lr2e-4_1ep_fused_lora_dequant4bit_mlx4bit"
 
 convert(repo, mlx_path=mlx_path, quantize=True)
-
-
-# root_lora_path = 'local_repo/llama32_3b_it_4bit_cnn_dailymail_10k_r4_a8_lr2e-4_1ep'
-# convert_hf_lora_to_mlx(
-#     hf_adapter_path=root_lora_path + '/adapter_model.safetensors',
-#     hf_config_path=root_lora_path + '/adapter_config.json',
-#     mlx_output_path=root_lora_path + '/mlx_adapter_converted'
-# )

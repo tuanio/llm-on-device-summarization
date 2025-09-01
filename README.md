@@ -172,7 +172,21 @@ python eval.py "meta-llama/Llama-3.2-3B-Instruct" true
 python eval.py "Qwen/Qwen2.5-3B-Instruct" true
 ```
 
-# Run inference
+# Inference
+
+## 1. Fused LoRA to Base Model
+
+```bash
+python unsloth_train/fused_lora.py
+```
+
+## 2. Convert the model to MLX format
+
+```bash
+python mlx_eval/convert_hf_to_mlx.py
+```
+
+## 3. Run inference
 ```bash
 cd mlx_eval
 python stream_mlx.py --model tuanio/converted_llama32_3b_it_4bit_cnn_dailymail_10k_r4_a8_lr2e-4_1ep_fused_lora_dequant4bit_mlx4bit
