@@ -44,7 +44,7 @@ This project explores both **extractive** and **abstractive** summarization meth
      - Learning rate: `2e-4`  
      - Batch size: `8`  
      - Epochs: `1` (10k samples)  
-     - Rank/Alpha tuning (ablation study included)
+     - Rank/Alpha tuning (ablation study included). Default Rank = 4, Alpha = 8.
 
 4. **Evaluation**:  
    - Metrics: **ROUGE-1, ROUGE-2, ROUGE-L, ROUGE-L-Sum**  
@@ -173,3 +173,7 @@ python stream_mlx.py --model tuanio/converted_llama32_3b_it_4bit_cnn_dailymail_1
 ----
 
 ![Demo GIF](demo_bigger.gif)
+
+---
+
+For more detail, please refer to this document: ![On-Device Summarization with LLMs](https://docs.google.com/document/d/1LToEvF6V-8kcnuyKF1hBOR951Tcf_4Z-Tevj5OD2q6c/edit?usp=sharing)
