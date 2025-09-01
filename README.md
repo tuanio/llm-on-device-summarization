@@ -163,6 +163,15 @@ python train.py \
 bash run_eval.sh
 ```
 
+Example below evaluate the quantized 4 bits of `Llama-3.2-3B-Instruct`, `Qwen/Qwen2.5-3B-Instruct`.
+```bash
+export HF_HOME="HF"
+export HF_DATASETS_CACHE="${HF_HOME}/cache"
+
+python eval.py "meta-llama/Llama-3.2-3B-Instruct" true
+python eval.py "Qwen/Qwen2.5-3B-Instruct" true
+```
+
 # Run inference
 ```bash
 cd mlx_eval
