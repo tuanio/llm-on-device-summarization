@@ -44,7 +44,7 @@ This project explores both **extractive** and **abstractive** summarization meth
      - Learning rate: `2e-4`  
      - Batch size: `8`  
      - Epochs: `1` (10k samples)  
-     - Rank/Alpha tuning (ablation study included). Default Rank = 4, Alpha = 8.
+     - Rank/Alpha tuning (ablation study included). Default `Rank = 4`, `Alpha = 8`.
 
 4. **Evaluation**:  
    - Metrics: **ROUGE-1, ROUGE-2, ROUGE-L, ROUGE-L-Sum**  
