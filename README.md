@@ -180,6 +180,9 @@ python eval.py "Qwen/Qwen2.5-3B-Instruct" true
 python unsloth_train/fused_lora.py
 ```
 
+- [QLoRA Adapter for Llama-3.2-3B-Instruct](https://huggingface.co/tuanio/llama32_3b_it_4bit_cnn_dailymail_10k_r4_a8_lr2e-4_1ep_qlora)
+- [QLoRA Adapter for Qwen-2.5-3B-Instruct](https://huggingface.co/tuanio/qwen_qwen2_5_3b_4bit_cnn_dailymail_10k_r4_a8_lr2e-4_1ep_qlora)
+
 ## 2. Convert the model to MLX format
 
 ```bash
