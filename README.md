@@ -172,4 +172,4 @@ python stream_mlx.py --model tuanio/converted_llama32_3b_it_4bit_cnn_dailymail_1
 
 ----
 
-![Demo GIF](demo.gif)
+![Demo GIF](demo_big.gif)
