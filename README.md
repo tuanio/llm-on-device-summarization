@@ -87,12 +87,20 @@ This project explores both **extractive** and **abstractive** summarization meth
 ## 📝 Example Summarization
 
 **Input (news article excerpt):**
-> The Islamic State group claimed credit on Saturday a bombing near the US consulate in Iraq's Kurdish region...  
+> Ryan Bertrand believes he deserves to be higher up the England pecking order and has pledged...  
+
+**Ground Truth**
+> Ryan Bertrand was fifth left back to be called up by England last month .
+> Bertrand only included after injuries to Leighton Baines, Luke Shaw and Danny Rose .
+> He replaced Kieran Gibbs in second half away in Italy .
+> Bertrand belives he should be higher up the England pecking order .
 
 **Model Output (Llama-3.2-3B, finetuned):**
-> ISIS claimed responsibility for a bombing near the US consulate in Iraq.  
-> Two people were killed, eight wounded, but no US employees were harmed.  
-> ISIS also claimed responsibility for additional bombings in Baghdad.
+> Ryan Bertrand was called up to Roy Hodgson's England squad last month.
+> The 25-year-old was included in the squad for the matches against Lithuania and Italy.
+> Bertrand has been in fine form for Southampton and hopes to prove himself.
+> He is currently fourth in the pecking order for left-back spot.
+
 
 ---
 
